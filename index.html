@@ -14,6 +14,8 @@
       background-size: cover;
       color: #000;
       text-align: center;
+
+
     }
 
     .overlay {
@@ -68,13 +70,49 @@
     .button img {
       font-size: 20px;
       width: 30px;
-      margin-right: 15px;
+      margin-right: 10px;
     }
 
     .footer {
+      text-align: center;
       margin-top: 20px;
       font-size: 14px;
       color: #333;
+    }
+  .link-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+      gap: 5px; /* space between the two links */
+    }
+
+    .link-box {
+      display: flex;	
+      padding: 5px 20px;
+      border-radius: 1px;
+      text-align: center;
+    }
+
+    .icon-column {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;      
+      margin: 0px;
+      padding: 0px 20px;
+      width: 10px;
+      color: #003b6f;
+    }
+
+    .icon-column i {
+      font-size: 24px;     
+      color: #006699;
+    }
+
+    .link-text a {
+      font-size: 20px;
+      color: blue;
+   
     }
 
     @media (max-width: 600px) {
@@ -121,10 +159,32 @@
        <img src="telegram.png" alt="Telegram">
 	<span> Join on Telegram </span>
     </a>
+<div class="link-container">
 
-    <p class="footer">
+    <!-- First link: senate.gov.kh -->
+    <div class="link-box">
+      <div class="icon-column">
+        <i class="fas fa-globe"></i>
+        <span>WWW</span>
+      </div>
+      <div class="link-text">
+        <a href="https://www.senate.gov.kh" target="_blank">senate.gov.kh</a>
+      </div>
+    </div>
+
+    <!-- Second link: elibrary.senate.gov.kh -->
+    <div class="link-box">
+      <div class="icon-column">
+        <i class="fas fa-book"></i>
+        <span>Library</span>
+      </div>
+      <div class="link-text">
+        <a href="https://elibrary.senate.gov.kh" target="_blank">elibrary.senate.gov.kh</a>
+      </div>
+     </div>
+ </div>
+<p>
       Address: Vimeanrath Chamcar Mon, Preah Norodom Blvd, Phnom Penh, Cambodia
     </p>
-  </div>
 </body>
 </html>
